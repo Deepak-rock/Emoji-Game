@@ -2,10 +2,10 @@
 import './index.css'
 
 const NavBar = props => {
-  const {currentScore, isGameProgress, topScore} = props
+  const {currentScore, isGameInProgress, topScore} = props
   return (
     <nav className="navbar">
-      <div className="logo-wirh-score-container">
+      <div className="logo-with-score-container">
         <div className="logo-and-title-container">
           <img
             className="logo"
@@ -14,7 +14,7 @@ const NavBar = props => {
           />
           <h1 className="logo-text">Emoji Game</h1>
         </div>
-        {isGameProgress && (
+        {isGameInProgress && (
           <div className="score-container">
             <p className="score">Score: {currentScore}</p>
             <p className="score">Top Score: {topScore}</p>
