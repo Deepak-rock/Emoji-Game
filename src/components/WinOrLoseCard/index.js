@@ -15,7 +15,7 @@ const WinOrLoseCard = props => {
       <div className="details-section">
         <h1 className="game-status">{gameStatus}</h1>
         <p className="current-score-label">{scoreLabel}</p>
-        <p className="current-score">{score}</p>
+        <p className="current-score">{score}/12</p>
 
         <button
           className="play-again-button"
@@ -24,9 +24,9 @@ const WinOrLoseCard = props => {
         >
           Play Again
         </button>
-        <div className="img-container">
-          <img src={imageUrl} alt="win or lose" className="win-or-lose-image" />
-        </div>
+      </div>
+      <div className="img-container">
+        <img src={imageUrl} alt="win or lose" className="win-or-lose-image" />
       </div>
     </div>
   )

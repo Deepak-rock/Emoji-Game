@@ -34,7 +34,7 @@ class EmojiGame extends Component {
     const {topScore} = this.state
     let newTopScore = topScore
 
-    if (topScore === currentScore) {
+    if (topScore < currentScore) {
       newTopScore = currentScore
     }
     this.setState({topScore: newTopScore, isGameInProgress: false})
